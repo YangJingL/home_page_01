@@ -1,0 +1,198 @@
+﻿@charset utf-8;
+/* CSS Document */
+/***************************************
+*	Version 		15.00.01
+*	Author			wuwg
+*  	CreateTime      15.04.27
+ *	UpdateTime		15.04.27
+* *************************************************/
+ 
+ 
+/**************************************
+*name     		 layout
+*status   		 start
+*CreatTime 		 15.04.27
+**************************************/
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color:#ebeaea;
+}
+.fd-contain {
+
+	min-width:1000px;
+	overflow:hidden;
+}
+.fd-contain ,.fd-header,.fd-footer {
+	width:100%;;
+}
+.fd-content{
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.fd-footer{
+	
+}
+.fd-header-in ,
+.fd-main,
+.fd-footer-in,
+.fd-content {
+	margin:0 auto;
+	width:1280px;
+}
+/**************************************
+*name      		layout
+*status   		 end
+*CreatTime 		 15.04.27
+**************************************/
+
+/**************************************
+*name     		theme
+*status    		start
+*CreatTime 		15.04.27
+**************************************/
+
+
+/*--------------------   header  --------------------*/
+.fd-header {
+	width: 100%;
+    background: url("../images/header-bg.png") repeat-x;
+}
+.fd-header-in {
+    width: 1438px;
+    height: 274px;
+    box-sizing: border-box;
+    background: url("../images/header-in-bg.png");
+    
+}
+/*--------------------   header end --------------------*/
+
+/*************  主体内容布局  *******************/
+.fd-login-container {
+    width: 100%;
+    box-sizing: border-box;
+    height: 42px;
+    border: 1px solid #dbdbdb;
+    background-color: #f9f9f9;
+}
+.fd-content {
+    box-sizing: border-box;
+    padding: 10px 12px;
+}
+.fd-container-01,
+.fd-container-02 {
+    width: 100%;
+}
+.fd-container-01:after,
+.fd-container-02:after {
+    display: block;
+    content: '';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.fd-layer-01 {
+    float: left;
+    margin-top: 13px;
+    width: 993px;
+}
+.fd-layer-02 {
+    float: right;
+    margin-top: 13px;
+    width: 250px;
+    height: 100px;/**待删**/
+}
+.fd-item {
+    float: left;
+    box-sizing: border-box;
+    width: 490px;
+    height: 240px;/**待删**/
+    border: 1px solid #ccc;
+}
+.item-odd {
+    margin-right: 12px;
+}
+.fd-layer-03 {
+    margin-top: 8px;
+    width: 100%;
+    height: 222px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cdcdcd ;
+    border-left: 1px solid #cdcdcd ;
+    border-right: 1px solid #cdcdcd ;
+    border-top: 3px solid #39acdb ;
+}
+.fd-layer-02:after {
+    display: block;
+    content: '';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.fd-02-item {
+    box-sizing: border-box;
+    padding: 17px 12px;
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    background-color: #fdfdfd;
+}
+/*******  院务通知等模块样式 *********/
+.fd-data-list-01 .item-03,
+.fd-data-list-01 .item-04 {
+    margin-top: 11px;
+}
+
+/*******  党务工作等模块的样式 *********/
+.fd-data-list-02 .fd-item {
+    margin-bottom: 11px;
+}
+.fd-data-list-02 .item-03,
+.fd-data-list-02 .item-04 {
+    margin-bottom: 0;
+}
+/***********广告区域  *************/
+.fd-banner {
+    margin-top: 8px;
+    width: 100%;
+    height: 108px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+/**********  庭室风采的样式  *************/
+.fd-list {
+    margin-top: 8px;
+    box-sizing: border-box;
+    height: 200px;/**待删**/
+    width: 100%;
+    height: 200px;
+    background-color: #39acdb;
+}
+/*--------------------  footer  --------------------*/
+.fd-footer {
+    height: 112px;
+    text-align: center;
+    line-height: 112px;
+    color: #fff;
+    background-color: #5ba9de;
+}
+.fd-footer > span {
+    display: inline-block;
+    width: 1280px;
+    margin: 0 auto;
+    vertical-align: middle;
+    font: 12px/25px "宋体";
+}
+/*----------------  2    ---------------- */
+/*------------   3 ------------*/
+/*--------   4 -------- */
+/*----  5 ----*/
+/*6 */
+
+
+/**************************************
+*name     		 theme
+*status    		 end
+*CreatTime 		 15.04.27
+**************************************/
+
+
