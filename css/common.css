@@ -58,22 +58,147 @@ html,body {
 	width: 100%;
     background: url("../images/header-bg.png") repeat-x;
 }
+.fd-header-wrapper {
+    width: 100%;
+    background: url("../images/header-in-bg.png") no-repeat center;
+}
 .fd-header-in {
-    width: 1438px;
+    position: relative;
+    width: 1280px;
     height: 274px;
     box-sizing: border-box;
-    background: url("../images/header-in-bg.png");
-    
+}
+.fd-header-title {
+    padding: 65px 0 0 3px;
+}
+.fd-header-title div:first-child {
+    display: inline-block;
+    width: 89px;
+    height: 101px;
+    vertical-align: middle;
+    background: url("../images/logo.png");
+}
+.fd-header-title div:last-child {
+    display: inline-block;
+    height: 57px;
+    width: 574px;
+    vertical-align: middle;
+    background: url("../images/header-title.png");
+}
+.fd-header-in > nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.fd-header-list {
+    text-align: center;
+}
+.fd-header-list > li {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 139px;
+    height: 41px;
+}
+.fd-header-list:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.fd-header-list a.select,
+.fd-header-list a:hover {
+    border: 1px solid #5daade;
+    border-radius: 3px;
+    background-color: #5daade;
+    color: #fff;
+    text-decoration: none;
+}
+.fd-text-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    font: 19px/39px "microsoft yahei";
+    color: #fff;
+    /*
+    font-weight: bolder;
+    */
+    font-weight: 900;
+    z-index: 4;
+}
+.fd-header-list a {
+    display: inline-block;
+    width: 100%;
+    font: 19px/39px "microsoft yahei";
+    font-weight: bold;
+    color: #137dcc;
 }
 /*--------------------   header end --------------------*/
 
-/*************  主体内容布局  *******************/
+/*************  登录模块的样式  *******************/
 .fd-login-container {
     width: 100%;
     box-sizing: border-box;
     height: 42px;
     border: 1px solid #dbdbdb;
     background-color: #f9f9f9;
+}
+.fd-login-in {
+    width: 1420px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+.fd-login-in label {
+    color: #354c82;
+}
+.fd-login-in input[type='text'] {
+    box-sizing: border-box;
+    width: 105px;
+    height: 26px;
+    border: 1px solid #ddd;
+}
+.fd-login-in:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.fd-login-in div:first-child {
+    float: left;
+}
+.fd-login-in div:last-child {
+    float: right;
+}
+.fd-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 7px;
+    width: 61px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #005d98;
+    color: #005d98;
+    text-align: center;
+    vertical-align: middle;
+}
+.fd-btn:hover {
+    text-decoration: none;
+}
+.fd-select {
+    box-sizing: border-box;
+    width: 105px;
+    height: 26px;
+    border: 1px solid #ddd;
+    background: url("../images/icon-select.png") no-repeat 80px center;
+}
+/****** 重写下拉框的样式  *******/
+select::-ms-expand {
+    display: none;
 }
 .fd-content {
     box-sizing: border-box;
@@ -141,7 +266,76 @@ html,body {
 .fd-data-list-01 .item-04 {
     margin-top: 11px;
 }
+.fd-data-list-01 nav {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 3px solid #5da9de;
+    background-color: #f5f5f5;
+}
+.nav-title-01 {
+    display: inline-block;
+    position: absolute;
+    top: -4px;
+    left: -1px;
+    box-sizing: border-box;
+    width: 142px;
+    height: 40px;
+    background: url("../images/sub-nav.png");
+}
+.fd-span-text-01 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/icon-01.png") no-repeat 6px center;
+}
+.fd-more-01 {
+    float: right;
+    margin-right: 12px;
+    padding-right: 11px;
+    background: url("../images/icon-more-1.png") no-repeat right center;
+    font-size: 14px;
+    font-family: "宋体";
+    color: #1f3b7b;
+}
+.fd-more-01:hover {
+    text-decoration: none;
+}
+.fd-ul-list {
+    box-sizing: border-box;
+    width: 100%;
+    height: 201px;
+    padding: 9px;
+}
+.fd-list-01 li {
+    background: url("../images/icon-li-bg1.png")no-repeat left center;
+}
+.fd-ul-list > li{
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+.fd-ul-list > li:after {
+    display: block;
+    content: '';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.fd-ul-list > li a {
+    display: inline-block;
+    width: 336px;
+    font: 14px/30px "宋体";
+    color: #1f3b7b;
 
+}
+.fd-ul-list > li span {
+    float: right;
+    margin-right: 12px;
+    font: 12px/30px "宋体";
+    color: #aeaead;
+}
 /*******  党务工作等模块的样式 *********/
 .fd-data-list-02 .fd-item {
     margin-bottom: 11px;
