@@ -231,7 +231,6 @@ select::-ms-expand {
     float: left;
     box-sizing: border-box;
     width: 490px;
-    height: 240px;/**待删**/
     border: 1px solid #ccc;
 }
 .item-odd {
@@ -291,16 +290,42 @@ select::-ms-expand {
     height: 100%;
     background: url("../images/icon-01.png") no-repeat 6px center;
 }
-.fd-more-01 {
+.fd-span-text-02 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/icon-02.png") no-repeat 6px center;
+}
+.fd-span-text-03 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/icon-03.png") no-repeat 6px center;
+}
+.fd-span-text-04 {
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+     background: url("../images/icon-04.png") no-repeat 6px center;
+ }
+.fd-more {
     float: right;
-    margin-right: 12px;
+    margin-right: 13px;
     padding-right: 11px;
-    background: url("../images/icon-more-1.png") no-repeat right center;
     font-size: 14px;
     font-family: "宋体";
     color: #1f3b7b;
 }
-.fd-more-01:hover {
+.fd-more-01 {
+    background: url("../images/icon-more-1.png") no-repeat right center;
+}
+.fd-more-02 {
+    background: url("../images/icon-more-2.png") no-repeat right center;
+}
+.pic-news {
+    margin-right: 21px;
+}
+.fd-more:hover {
     text-decoration: none;
 }
 .fd-ul-list {
@@ -311,6 +336,9 @@ select::-ms-expand {
 }
 .fd-list-01 li {
     background: url("../images/icon-li-bg1.png")no-repeat left center;
+}
+.fd-list-02 li {
+    background: url("../images/icon-14.png")no-repeat left center;
 }
 .fd-ul-list > li{
     box-sizing: border-box;
@@ -336,6 +364,56 @@ select::-ms-expand {
     font: 12px/30px "宋体";
     color: #aeaead;
 }
+/*******  图片新闻模块样式  *********/
+.fd-nav-title-02 {
+    position: relative;
+    float: left;
+    margin-right: -139px;
+    width: 139px;
+    height: 38px;
+    background-color: #000;
+
+}
+.fd-news-nav-title {
+    background: url("../images/icon-05.png") no-repeat 12px center;
+}
+.title-01 {
+    background: url("../images/icon-10.png") no-repeat 12px center;
+}
+.title-02 {
+    background: url("../images/icon-11.png") no-repeat 12px center;
+}
+.title-03 {
+    background: url("../images/icon-12.png") no-repeat 12px center;
+}
+.title-04 {
+    background: url("../images/icon-13.png") no-repeat 12px center;
+}
+.title-05 {
+    background: url("../images/icon-15.png") no-repeat 12px center;
+}
+.fd-sub-nav:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.fd-sub-nav .fd-sub-nav-con {
+    float: right;
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+
+}
+.fd-sub-nav-con >div {
+    height: 100%;
+    margin-left: 139px;
+    line-height: 38px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
 /*******  党务工作等模块的样式 *********/
 .fd-data-list-02 .fd-item {
     margin-bottom: 11px;
@@ -344,6 +422,7 @@ select::-ms-expand {
 .fd-data-list-02 .item-04 {
     margin-bottom: 0;
 }
+
 /***********广告区域  *************/
 .fd-banner {
     margin-top: 8px;
@@ -351,15 +430,67 @@ select::-ms-expand {
     height: 108px;
     box-sizing: border-box;
     border: 1px solid #ccc;
+    background: url("../images/banner.png")no-repeat;
+}
+.fd-banner >a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 /**********  庭室风采的样式  *************/
 .fd-list {
     margin-top: 8px;
     box-sizing: border-box;
-    height: 200px;/**待删**/
     width: 100%;
-    height: 200px;
-    background-color: #39acdb;
+    border: 1px solid #ccc;
+    border-top: 3px solid #5eaade;
+}
+.fd-datalist-03 {
+    box-sizing: border-box;
+    padding: 11px 33px 27px;
+}
+.fd-datalist-03:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.fd-datalist-03 >li {
+    float: left;
+    box-sizing: border-box;
+    margin: 11px 20.25px 0;
+    width: 52px;
+    height: 51px;
+    border: 1px solid #1f9cdf;
+    border-radius: 3px;
+}
+.fd-datalist-03 >li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/************* 各院链接样式 *****************/
+.fd-link-list {
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding: 44px 16px 30px;
+    width: 100%;
+    background: url("../images/icon-16.png") no-repeat top center;
+    font: 14px/34px "宋体";
+    color: #1f3b7b;
+}
+.fd-link-list:after {
+    content: '';
+    display: block;visibility: hidden;
+    visibility: hidden;
+    clear: both;
+}
+.fd-link-list li {
+    float: left;
+}
+.fd-link-list a {
+    display: block;
+    padding: 0 18px;
 }
 /*--------------------  footer  --------------------*/
 .fd-footer {
