@@ -257,8 +257,9 @@ select::-ms-expand {
     box-sizing: border-box;
     padding: 17px 12px;
     width: 100%;
-    border: 1px solid #f2f2f2;
+    height: 261px;
     background-color: #fdfdfd;
+    background: url("../images/weather-bg.png")no-repeat center;
 }
 /*******  院务通知等模块样式 *********/
 .fd-data-list-01 .item-03,
@@ -506,6 +507,162 @@ select::-ms-expand {
     margin: 0 auto;
     vertical-align: middle;
     font: 12px/25px "宋体";
+}
+/*********  天气模块样式  **************/
+.fd-weather {
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+.fd-weather:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.fd-weather >div:first-child {
+    float: left;
+    width: 115px;
+}
+.fd-weather >div:last-child {
+    float: right;
+    width: 109px;
+}
+.fd-weather-item {
+    position: relative;
+    box-sizing: border-box;
+    height: 129px;
+    background-color: #3499ec;
+}
+.fd-weather-item >img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 22px;
+    width: 73px;
+    height: 73px;
+}
+.fd-weather-item>span {
+    position: absolute;
+    right: 11px;
+    bottom: 6px;
+    font: 13px/normal "宋体";
+    color: #fff;
+}
+.fd-temp {
+    box-sizing: border-box;
+    height: 33px;
+    font: 14px/33px "microsoft yahei";
+    background-color: #0088e9;
+    color: #fff;
+    text-align: center;
+}
+.fd-date {
+    box-sizing: border-box;
+    height: 69px;
+    background-color: #0088e9;
+    color: #fff;
+}
+.fd-date>div:first-child {
+    box-sizing: border-box;
+    padding-left: 7px;
+    padding-top: 7px;
+    font: 12px/normal "microsoft yahei";
+}
+.fd-date>div:last-child {
+    margin-top: 10px;
+    text-align: center;
+    font: 19px/normal "microsoft yahei";
+}
+.fd-week {
+    box-sizing: border-box;
+    height: 34px;
+    background-color: #0078d2;
+    font: 16px/34px "microsoft yahei";
+    text-align: center;
+    color: #fff;
+}
+.fd-time {
+    box-sizing: border-box;
+    height: 59px;
+    background-color: #0056a3;
+    font: 37.7px/59px "microsoft yahei";
+    text-align: center;
+    color: #fff;
+}
+.fd-limit {
+    position: relative;
+    margin-top: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+}
+.fd-limit:after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    clear: both;
+}
+.fd-limit-item-01 {
+    float: left;
+    box-sizing: border-box;
+    padding-left: 8px;
+    width: 163px;
+    height: 52px;
+    border-left: 1px solid #0f4c92;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: url("../images/dott.png") no-repeat 8px center #0f4c92;
+}
+.fd-limit-item-01 div{
+    line-height: 25px;
+}
+.fd-limit-item-02 {
+    float: right;
+    box-sizing: border-box;
+    width: 63px;
+    height: 52px;
+    border: 1px solid #dc0000;
+    border-radius: 2px;
+    background: url("../images/dott.png") no-repeat right 8px center #dc0000;
+}
+.fd-limit-item-02 div {
+    line-height: 25px;
+    text-align: center;
+}
+.fd-limit>hr {
+    position: absolute;
+    width: 209px;
+    height: 1px;
+    left: 50%;
+    top: 24px;
+    margin-left: -104.5px;
+}
+/************  值班模块样式  *************/
+.fd-03-item {
+    box-sizing: border-box;
+    width: 250px;
+    margin-top: 8px;
+}
+.fd-03-item-title {
+    box-sizing: border-box;
+    height: 40px;
+    background: url("../images/icon-19.png")no-repeat;
+}
+.fd-03-item-title >span {
+    display: inline-block;
+    margin-left: 17px;
+    width: 101px;
+    height: 100%;
+    background: url("../images/icon-18.png") no-repeat center;
+}
+.fd-03-item-title >a {
+    float: right;
+    margin-right: 12px;
+    font: 12px/40px "宋体";
+    color: #fff;
+
 }
 /*----------------  2    ---------------- */
 /*------------   3 ------------*/
